@@ -1,0 +1,147 @@
+$font-family: "Young Serif", serif;
+
+.container {
+  font-family: $font-family;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.container__form {
+  margin-bottom: 20px;
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+.posts-container {
+  .postBox {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    .postTitle {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .postTextArea {
+      width: 80%;
+      height: 40vh; 
+      min-height: 100%; 
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 8px;
+      margin-bottom: 10px;
+      font-family: inherit;
+      resize: none;
+    }
+
+    .commentDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: fit-content;
+      max-height: 200px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 3vh;
+      background-color: #a5bdd6;
+      p {
+        max-height: fit-content;
+        overflow: auto;
+        margin: 0;
+      }
+      button {
+        margin-left: 5px;
+        width: 3vw;
+        padding: 0.2vw;
+      }
+    }
+    .commentsForm {
+      width: 100%;
+      margin-bottom: 8vh;
+      margin-top: 3vh;
+    }
+    input {
+      flex: 1;
+      padding: 8px;
+      margin-right: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    button {
+      width: 5vw;
+      padding: 1vw;
+      background-color: #5456d8;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-family: inherit;
+      cursor: pointer;
+      &:hover {
+        background-color: #213488;
+      }
+    }
+    .newPostContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 50%;
+        margin-bottom: 10px;
+      }
+
+      textArea {
+        width: 70%;
+        height: 20vh;
+        margin-bottom: 10px;
+        font-family: $font-family;
+        resize: none;
+      }
+    }
+  }
+  .postBoxLower {
+    &.hidden {
+      display: none;
+    }
+  }
+}
